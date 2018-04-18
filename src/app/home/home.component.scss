@@ -1,18 +1,21 @@
-.no-items {
-    margin: 25px 0;
-}
 
-.list {
-    text-align: center;
-    .community {
-        cursor: pointer;
-        display: inline-block;
-        width: 200px;
-        padding: 10px;
-        &:hover {
-            opacity: 0.8;
-        }
-        .picture {}
-        .name {}
-    }
+#fdcdatatable{
+    height: auto;
+    width: auto;
+    
+}
+#asset-test-div{
+    height: auto;
+    width: auto;
+    position: absolute;
+    background: rgb(37, 36, 36);
+    z-index: 1;
+    top: 93px;
+    left: 300px;
+}
+#closebutton{
+right: 5px;
+position: absolute;
+
+
 }

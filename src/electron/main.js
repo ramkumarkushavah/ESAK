@@ -26,7 +26,7 @@ function createWindow() {
   mainWindow.once("ready-to-show", () => { mainWindow.show() })
 
   // Open the DevTools.
-  // mainWindow.webContents.openDevTools()
+  mainWindow.webContents.openDevTools()
 
   ipcMain.on("mainWindowLoaded", function () {
     let result = knex.select("*").from("communities")
@@ -48,6 +48,7 @@ function createWindow() {
 // Database functions
 ipcMain.on("createCommunity", function (evt, data) {
   let result = knex("communities").insert(data);
+  console.log("inserted data is",result);
   result.then(function (rows) {
     mainWindow.webContents.send("CommunitiesListSent", rows);
   })
