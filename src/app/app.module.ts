@@ -5,6 +5,7 @@ import { AppRoutingModule } from './modules/app-routing.module';
 import { FormsModule }   from '@angular/forms';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -26,7 +27,8 @@ import { CommunityDetailComponent } from './community-detail/community-detail.co
     BrowserAnimationsModule,
     MaterialModule,
     AppRoutingModule,
-    FormsModule 
+    FormsModule,
+    HttpModule 
   ],
   providers: [],
   bootstrap: [AppComponent]

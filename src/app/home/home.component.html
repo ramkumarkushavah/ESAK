@@ -12,6 +12,9 @@
       </form>
     </div>
     <p>------------------------------------------------------------------</p>
+    <div>
+      <h2 style="color:red;">Internet Connection Status: {{connectionstatus}} </h2>
+    </div>
     <button id="closebutton" (click)="close()">Close</button>
     <p>
       <font color="blue">Offline FDC Data
@@ -25,8 +28,8 @@
         <th>Tank Id</th>
         <th>Tank Reading</th>
         <th>Volume</th>
-        <th>Update</th>
-        <th>Delete</th>
+        <th>Test</th>
+        <th>Test</th>
       </tr>
       <tr *ngFor="let c of communitiesList">
         <td>
@@ -48,10 +51,10 @@
           <p class="name light-blue">{{c.telephone}}</p>
         </td>
         <td (click)="update()">
-          <button>Update</button>
+          <button>Test</button>
         </td>
         <td (click)="delete()">
-          <button>Delete</button>
+          <button>Test</button>
         </td>
       </tr>
     </table>
